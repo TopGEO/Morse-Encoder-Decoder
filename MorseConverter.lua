@@ -45,6 +45,6 @@ return Table
        end
        
        
-local T = ""
+local T = "hello world"
 print("Encoded : "..Enc(T))
 print("Decoded : "..Dec(Enc(T)))
