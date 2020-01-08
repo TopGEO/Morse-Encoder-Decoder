@@ -45,6 +45,6 @@ return Table
        end
        
        
-local T = "738288291"
-print(Enc(T))
-print(Dec(Enc(T)))
+local T = ""
+print("Encoded : "..Enc(T))
+print("Decoded : "..Dec(Enc(T)))
