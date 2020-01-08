@@ -55,5 +55,5 @@ return Table
        
        
 local T = "HELLOWORLD"
-print(Enc(T))
-print(Dec(Enc(T)))
+print("Encode :"..Enc(T))
+print("Decode :"..Dec(Enc(T)))
