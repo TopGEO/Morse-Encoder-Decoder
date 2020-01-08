@@ -12,16 +12,7 @@ return Text
     Text = string.upper(_G["tostring"](Text))
  local Nums , Words , E , E2 , __ = {".----","..---","...--","....-",".....","-....","--...","---..","----.","-----"} , {".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."} , "" , ""
      for i = 1, #Text do
-          local c = string.sub(Text, i)
-          c = "\""..c.."\""
-         if __ == nil then __ = ""
-    E = E..c
-    else
-        E = E..","..c
-        end
-        end
-        _G["load"]("Table = {"..E.."}")()
-        for I , l in _G["pairs"](_G["Table"]) do
+          local l = string.sub(Text, i,i)
         local CH = Check(l)
         if CH == true then
         local TN = _G["tonumber"](l)
@@ -54,6 +45,6 @@ return Table
        end
        
        
-local T = "HELLOWORLD"
-print("Encode :"..Enc(T))
-print("Decode :"..Dec(Enc(T)))
+local T = "738288291"
+print(Enc(T))
+print(Dec(Enc(T)))
